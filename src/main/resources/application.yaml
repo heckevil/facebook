@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3308/facebook
+    username: root
+    password: koreait
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  #    톰캣서버
+server:
+   port: 8090
