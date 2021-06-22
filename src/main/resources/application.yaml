@@ -1,4 +1,14 @@
 spring:
+  mail:
+    host: smtp.gmail.com
+    username: heckevil12@gmail.com
+    password: mrabioypwhcjsljp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
   thymeleaf:
     check-template-location: true
     prefix: classpath:templates/
@@ -8,9 +18,13 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3308/facebook
     username: root
-    password: koreait
+    password: 1245
     driver-class-name: org.mariadb.jdbc.Driver
 
-  #    톰캣서버
+mybatis:
+  mapper-locations: mybatis-mapper/**/*.xml
+  type-aliases-package: com.koreait.facebook
+
+#톰캣 포트 변경
 server:
-   port: 8090
+  port: 8090
