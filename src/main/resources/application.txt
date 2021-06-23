@@ -1,8 +1,9 @@
 spring:
   mail:
     host: smtp.gmail.com
-    username: heckevil12@gmail.com
-    password: azldujwapwzcqegl
+    port: 587
+    username: 아이디
+    password: 비밀번호
     properties:
       mail:
         smtp:
@@ -16,15 +17,11 @@ spring:
     mode: HTML
     cache: false
   datasource:
-    url: jdbc:mysql://localhost:3308/facebook2
+    url: jdbc:mysql://localhost:3308/facebook
     username: root
-    password: koreait
+    password: koreait2021
     driver-class-name: org.mariadb.jdbc.Driver
-  servlet:
-    multipart:
-      max-file-size: 5MB
-      max-request-size: 30MB
-      location: D:/springImg
+
 mybatis:
   mapper-locations: mybatis-mapper/**/*.xml
   type-aliases-package: com.koreait.facebook
