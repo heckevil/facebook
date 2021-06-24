@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MySecurityUtils {
+
     public int getRandomNumber(int eNumber) {
         return getRandomNumber(0, eNumber);
     }

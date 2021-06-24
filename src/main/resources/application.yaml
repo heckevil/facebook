@@ -18,7 +18,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3308/facebook2
     username: root
-    password: koreait
+    password: 1245
     driver-class-name: org.mariadb.jdbc.Driver
   servlet:
     multipart:
